@@ -30,7 +30,7 @@ const shortestPath = function (grid) {
   while (queue.length > 0) {
     const [row, col, steps] = queue.shift();
     if (row === targetRow && col === targetCol) {
-      console.log(`row:${row} col:${col} steps:${steps}`);
+      // console.log(`row:${row} col:${col} steps:${steps}`);
       return steps;
     }
     for (const [directionsRow, directionsCol] of directions) {
